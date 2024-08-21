@@ -1,0 +1,964 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url("fonts/Roboto-Bold.ttf") format(trueType); 
+	src: url("fonts/Roboto-Black.ttf") format(trueType);
+	src: url("fonts/Roboto-Medium.ttf") format(trueType);
+	src: url("fonts/Roboto-Regular.ttf") format(trueType);
+	font-weight: normal;
+	font-style: normal;
+  }
+  .priceBoxList {
+  margin-top: 71px;
+  width: 304px;
+  height: 569px;
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.priceBoxList.hover,
+.priceBoxList:hover {
+  background-color: #0C1335;
+  color: #fff; /* Change text color to white when hovering */
+  transform: scaleY(1.035);
+}
+
+/* Change the color of the text inside the .priceBoxList on hover */
+.priceBoxList.hover .features,
+.priceBoxList:hover .features,
+.priceBoxList.hover .standard-plan h4,
+.priceBoxList:hover .standard-plan h4,
+.priceBoxList.hover .priceTag h4,
+.priceBoxList:hover .priceTag h4,
+.priceBoxList.hover .priceTag p,
+.priceBoxList:hover .priceTag p,
+.priceBoxList.hover .standard h4,
+.priceBoxList:hover .standard h4,
+.priceBoxList.hover .standard p,
+.priceBoxList:hover .standard p {
+  color: #fff;
+}
+
+/* Ensure the text color inside the box changes as well */
+.priceBoxList.hover .priceContent1,
+.priceBoxList:hover .priceContent1 {
+  color: #fff;
+}
+
+/* Adjust the button's border and background color on hover */
+.priceBoxList.hover .registerBtn,
+.priceBoxList:hover .registerBtn {
+  border: 1px solid #EC7922;
+  background: #EC7922;
+  color: #fff;
+}
+
+.features {
+  color: #707070;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.standard-plan h4 {
+  color: #707070;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.priceTag h4 {
+  color: #000;
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.priceTag p {
+  color: #EC7922;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.standard h4 {
+  color: #EC7922;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.standard p {
+  color: #707070;
+  font-size: 13px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.registerBtn {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  position: absolute;
+  bottom: 50px;
+  height: 44px;
+  width: 244px;
+  border: 1px solid #0A5274;
+  background: #fff;
+  justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+  .logo {
+    height: 62px;
+    width: 178px;
+    margin: 26px 0;
+  }
+  a{
+    text-decoration: none;
+    font-family: Roboto , sans-serif
+  }
+    .coverBtn1{
+        background-color: #EC7922;
+        color: #fff;
+        border: 1px solid #EC7922;
+        height: 42px;
+        width: 160px !important;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .coverBtn1 a{
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .coverBtn2 a{
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .coverBtn2{
+        color: #fff;
+        border: 1px solid #fff;
+        height: 42px;
+        width: 160px !important;
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .heading1{
+        font-weight: 700;
+        font-size: 14px;
+        text-align: left;
+        font-family: Roboto;
+    } 
+    .heading2{
+        font-weight: 900;
+        font-size: 36px;
+        text-align: left;
+        font-family: Roboto;
+    } 
+
+    .heading4{
+        font-weight: bold;
+        font-size: 16px;
+        text-align: left;
+        font-family: Roboto;
+    } 
+
+    .heading8{
+        font-weight: bold;
+        font-size: 16px;
+        text-align: left;
+        font-family: Roboto;
+        color: #fff;
+    } 
+
+    .heading9{
+      font-weight: bold;
+      font-size: 16px;
+      text-align: left;
+      font-family: Roboto;
+      color: #000;
+  } 
+
+    .heading5{
+        font-weight: 500;
+        font-size: 36px;
+        text-align: left;
+        font-family: Roboto;
+        color: #EC7922;
+    } 
+    
+    .heading6{
+        font-weight: bold;
+        font-size: 16px;
+        text-align: left;
+        font-family: Roboto;
+       
+    } 
+
+    .heading7{
+        font-weight: 500;
+        font-size: 36px;
+        text-align: left;
+        font-family: Roboto;
+        color: #fff;
+    } 
+    
+    .para1{
+        font-weight: 400;
+        font-size: 16px;
+        text-align: left;
+        font-family: Roboto;
+        width: 619px;
+    } 
+
+
+    .para2{
+        color: #fff;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: justify;
+        font-family: Roboto;
+        width: 1042px;
+    } 
+
+    .para3{
+        color: #fff;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: justify;
+        font-family: Roboto;
+        width: 433px;
+        line-height: 1.4;
+      
+    } 
+
+    .para4{
+      color: #000;
+      font-weight: 400;
+      font-size: 18px;
+      text-align: justify;
+      font-family: Roboto;
+      width: 643px;
+      line-height: 1.4;
+    
+  } 
+
+
+    .hiw{
+        font-weight: 500;
+        font-size: 36px;
+        font-family: Roboto;
+        color: #fff;
+    }
+
+    
+
+    .caption {
+        text-align: left;    
+        margin-top: 120px;
+        font-family: Roboto;
+    }
+    
+    body{
+        font-family: Roboto;
+    }
+    .cover {
+                background-image: url(images/coverHome.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 583px;
+                min-height: 100%;
+            }
+
+           
+
+            .textColorWhite {
+                color: #fff;
+            }
+
+            .textColorBlack {
+                color: #000;
+            }
+
+            #nav ul{
+                margin: 48px 0px 0 0px;
+                width: 959px;
+                height: 44px;
+            }
+            #nav li{
+                padding: 0 14px;
+            }
+
+            #nav a{
+                color: #4E4E4E;
+                font-weight: 500;
+        font-size: 18px;
+        font-family: Roboto;
+            }
+            .custom-container {
+            max-width: 1500px; /* Adjust the width as per your requirement */
+        }
+
+        .learnBtn{
+            background-color: #0C1335;
+            color: #fff;
+            width: 160px;
+            height: 42px;
+            justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+    top: 101px;
+    right: 72px;
+        }
+
+        .learnBtn a{
+            color: #fff;
+            font-weight: 500;
+        font-size: 18px;
+        font-family: Roboto;
+        }
+
+        .benifitBox1{
+            height: 292px;
+            width: 492px;
+            position: relative;
+        }
+
+        .benifitBox1 img{
+            height: 292px;
+            width: 433px;
+        }
+
+        .btnBox{
+            height: 61px;
+            width: 312px;
+            background-color: #EC7922;
+            position: absolute;
+            bottom: -30px;
+            left: 72px;
+            justify-content: center;
+        align-items: center;
+        display: flex;
+        }
+
+        .btnBox1{
+            height: 61px;
+            width: 312px;
+            background-color: #EC7922;
+            position: absolute;
+            bottom: -30px;
+            left: 72px;
+            justify-content: center;
+        align-items: center;
+        display: flex;
+        }
+
+
+        .btnBox2{
+            height: 61px;
+            width: 312px;
+            background-color: #EC7922;
+            position: absolute;
+            bottom: -30px;
+            left: 72px;
+            justify-content: center;
+        align-items: center;
+        display: flex;
+        }
+
+        .btnBoxa{
+            color: #fff;
+            font-weight: 700;
+        font-size: 20px;
+        font-family: Roboto;
+        }
+        .howitsWorks{
+            height: 804px; 
+            background-color: #0C1335; 
+            background-image: url('images/bg.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            margin-top: 130px;
+        }
+
+        .roles{
+            height: 743px; 
+            background-color: #fff; 
+            background-image: url('images/roles-bg.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+        }
+        .roles-box{
+            margin-top: 10px; 
+            background-image: url('images/smallRectangle.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            height: 131px;
+            width: 643px;
+            border-left: 7px solid #9BB7C4;
+
+            
+
+        }
+
+        .roles-box h4{
+            padding-top: 12px;
+            color: #0C1335;
+        font-weight: 500;
+        font-size: 22px;
+        font-family: Roboto;
+       width: 100%;
+       margin: 0;
+        }
+
+        .roles-box p{   
+        color: #0C1335;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: Roboto;
+        width: 100%;
+        margin: 0;
+        }
+
+        .roles-box a{
+            padding-top: 12px;
+            color: #EC7922;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: Roboto;
+       
+        }
+
+        .roles-box1 {
+    margin-top: 10px; 
+    background-image: url('images/roles-small-box.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 643px;
+    border-left: 7px solid #CDDBE1;
+}
+
+.roles-box1 h4 {
+    color: #0C1335;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: Roboto;
+    padding-top:23px ;
+}
+.box {
+    width: 100%;
+}
+
+.dashboard-bg{
+    height: 444px;
+    width: 748px;
+    margin-top: 20px; 
+    background-image: url('images/dashboardstructure.png');
+    margin: 0;
+    padding: 0;
+}
+.dashboard-inner{
+    height: 411px;
+    width: 749px;
+    margin-top: 33px;
+}
+
+.blog-para{
+    color: #0C1335;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: Roboto;
+        width: 552px;
+        margin: 0;
+}
+.blog-btn{
+    height: 42px;
+            width: 160px;
+            background-color: #0C1335;
+            justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 20px;
+}
+.blog-btn a{
+    color: #fff;
+    font-weight: 500;
+        font-size: 18px;
+        font-family: Roboto;
+}
+
+.blog-box{
+  
+    border: 1px solid #000;
+    height: 292px;
+    width: 367px;
+}
+
+/* .blog-box img{
+    border: 1px solid #000;
+    height: 292px;
+    width: 367px;
+    margin: 20px;
+} */
+.caption-content{
+    margin-top: 140px;
+}
+.txt-holder p{
+    margin-top: 10px;
+    font-size: 16px; 
+    font-family: Roboto; 
+    font-weight: 500;
+}
+.txt-holder h3{
+   
+    color: #739FB0; 
+    font-size: 22px; 
+    font-family: Roboto; 
+    font-weight: 500;
+    width: 247px;
+}
+.btnLearn{
+background-color: #0C1335;
+    width: 115px;
+    height: 35px;
+    justify-content: center;
+        align-items: center;
+        display: flex;
+    border: 1px solid #0C1335; 
+
+}
+.btnLearn a{
+    color: #fff;  
+    padding: 0;
+    margin: 0;  
+}
+/*------------------------------------------------------------------
+44. Footer / #footer
+-------------------------------------------------------------------*/
+#footer {
+    height: 495px;
+  overflow: hidden;
+}
+
+#footer .footer-holder {
+  padding: 0px 0 11px;
+  overflow: hidden;
+  background: #111;
+  color: #acacac;
+}
+
+#footer h3 {
+  line-height: 20px;
+  color: #A7A7A7;
+  margin: 0 0 0px;
+  padding: 0 0 4px;
+  position: relative;
+  font-family: Roboto; 
+  font-weight: bold; 
+  font-size: 16px;
+}
+
+#footer p {
+  color: #A7A7A7;
+  font-family: Roboto; 
+  font-weight:  300; 
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+/* #footer h3:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  right: auto;
+  width: 60px;
+  height: 2px;
+  z-index: 0;
+} */
+
+#footer .contact-list {
+  overflow: hidden;
+  margin: 0;
+}
+
+#footer .contact-list li {
+  overflow: hidden;
+  margin: 0 0 10px;
+}
+
+#footer .contact-list .icon {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 10px 0 0;
+}
+
+#footer .contact-list address {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 400;
+  font-family: Roboto;
+  font-style: normal;
+  margin: 0;
+}
+
+#footer .contact-list a {
+  display: inline-block;
+  vertical-align: top;
+  color: #acacac;
+  transition: all 0.25s linear;
+}
+
+#footer .hour-list {
+  overflow: hidden;
+  margin: 0;
+}
+
+#footer .hour-list li {
+  overflow: hidden;
+  margin: 0 0 10px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+#footer .hour-list time {
+  display: block;
+}
+
+#footer .subscribe-form {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0 0;
+}
+
+#footer .subscribe-form .form-control {
+  color: #5d5d5d;
+  width: 100%;
+  height: 31px;
+  background: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 6px 40px 6px 22px;
+}
+
+#footer .subscribe-form button {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 18px;
+  color: #5d5d5d;
+  background: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.25s linear;
+}
+
+#footer .subscribe-form button:hover {
+  transform: rotate(30deg);
+}
+
+#footer .footer-area {
+  padding: 10px 0 39px;
+  overflow: hidden;
+  background: #4E4E4E;
+}
+
+#footer .footer-area p {
+  margin: 0;
+}
+
+#footer .socail-network {
+  float: right;
+  text-align: right;
+  color: #555;
+}
+
+#footer .socail-network li {
+  margin: 0 0 0 39px;
+}
+
+#footer .socail-network a {
+  color: #555;
+}
+.social-icons{
+    padding: 0;
+}
+.social-icons li {
+        display: inline-block; /* Display list items in a line */
+        margin-right: 10px; /* Add space between icons */
+       
+    }
+
+    .social-icons i{
+        font-size: 27px;
+    }
+    .footer-area{
+        border-top: 1px solid #B5B5B5;
+    }
+
+
+    .contact{
+      height: 700px; 
+      background-image: url('images/contact-bg.png');
+      margin: 0;
+      padding: 0;
+    }
+
+    .formRequest{
+      width:618px;
+      height: 573px;
+      background-color: #fff;
+      margin-top: 70px;
+      padding-top:30px ;
+      }
+
+
+      .btn-test{
+        border: 1px solid #fff;
+      }
+
+      .butnsContainer{
+        margin-top: 87px;
+        padding-left: 44px;
+
+      }
+      .switching-btn{
+        height: 45px;
+        padding: 22px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color:#739FB0;
+        border: none;
+        color: white;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 41px;
+      }
+      .seitchBoxContent{
+        padding: 20px;
+        color: white;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 70px;
+        background-image: url(images/seitchContent.png);
+      }
+
+      .seitchBoxContent li{
+        margin-top: 20px;
+      }
+
+      .formBox{
+        justify-content: end;
+        align-items: end;
+        display: flex;
+      }
+
+
+
+
+      /* ----------------------------about us ----------------------- */
+
+      .coverBenifit {
+        background-image: url(images/benfitCover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+        min-height: 100%;
+    }
+
+    .coverAbout {
+      background-image: url(images/about.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 500px;
+      min-height: 100%;
+  }
+    .aboutHeadBox{
+      justify-content: flex-start;
+      align-items: center;
+      display: flex;
+      height: 200px;
+      text-align: left;
+    }
+    .aboutHeading{
+      margin-top: 100px;
+      color: #fff;
+      font-family: Roboto;
+        font-size: 36px;
+        font-weight: 900;
+    }
+    .about-nav{
+      margin: 40px 0px 0 0px !important;
+      width: 959px;
+      height: 44px;
+    }
+
+    .logoAbout {
+      height: 62px;
+      width: 178px;
+      margin: 23px 0;
+  }
+
+  .aboutImage{
+    height: 439px;
+    margin-top: 59px;
+  }
+
+  .aboutImage img{
+    height: 439px; 
+ 
+  }
+
+  .benifit{
+    height: 439px;
+    margin-top: 59px;
+  }
+  /* .benifit img{ 
+    position: absolute;
+    right: -163px;
+  } */
+
+  .breadscrum{
+    height: 60px;
+    background-color: #EBF1F3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .breadscrum p{
+    font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+  }
+  .content-text{
+    height: 385px;
+    width: 694px;
+    margin-top: 127px;
+  }
+  .content-text h4{
+    color: #EC7922; 
+    font-size:36px ; 
+    font-family: Roboto;     
+    font-weight: 500; 
+    line-height: 2.2; 
+  }
+  .content-text p{
+    color:#fff; 
+    font-size:18px ; 
+    font-family: Roboto; 
+    font-weight:400; 
+    line-height: 1.5; 
+    margin-top:10px;     
+    text-align: left; 
+    
+  }
+.vision{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 'auto'; 
+  background-image: url(images/bg-img1.png);
+  text-align: justify;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mision{
+  
+  margin: 0;
+  padding: 0;
+  height: 'auto'; 
+  background-image: url(images/bg-img1.png);
+  text-align: justify;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  .content-text-Vision {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .content-text-mision {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .contentBox2{
+    margin-left: 142px;
+    width: 100%;
+  }
+
+  .contentBox{
+    width: 90%;
+  }
+
+  .imgBox{
+		width: 18%;
+    /* padding: 30px; */
+    height: 306px;
+    background-repeat: no-repeat;
+    background-image: url(images/innerBox.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	}
+
+	/* .imgBox img{
+		height: 60px;
+		width: 60px;
+		margin: 10px;
+	}
+
+	.imgBox p {
+		margin-top: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 400;
+	} */
+  .imgBoxHeading{
+		padding: 20px;
+    margin-top: 130px;
+    text-align: center;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 36px;
+	}
