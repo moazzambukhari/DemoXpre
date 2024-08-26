@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Xprecon | About Us</title>
+    <title>Xprecon | Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,81 +12,144 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style> 
- 
-        
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    height: 100%; /* Ensures content takes the full height of the parent div */
+}
+.contactContent h5{
+color: #fff;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+}
+
+.contactContent h1{
+    color: #fff;    
+    font-family: Roboto;
+font-size: 36px;
+font-weight: 500;
+}
+
+.contactContent p{
+    color: #fff;
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center; /* Vertically centers the entire column */
+}
+
+.contact-form{
+    background-color: #fff;
+    width: 667px;
+    height: 595px;
+}
+
+
+.cont-Head {
+    height: 100px;
+    display: flex; /* Ensure it’s a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.cont-Head h1 {
+    color: #0C1335;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center; /* Center text inside the heading */
+}
+
+.field input{
+background-color: #F2F3F4;
+padding: 15px;
+border-radius: none;
+/* width:85%; */
+}
+
+.select-Dropdown{
+    background-color: #F2F3F4; padding: 15px;
+}
+    
+
+#nav ul {
+    margin: 37px 0px 0 0px;
+    width: 959px;
+    height: 44px;
+}
+.logo {
+    height: 62px;
+    width: 178px;
+    margin: 20px 0;
+}
+#footer {
+    height: 497px;
+    overflow: hidden;
+}
             </style>  
 </head>
   <body>
 
     <main>
         <!-- navbar -->
-<section style="height: 97px;">
+        <section style="height: 97px;">
             <div class="container custom-container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="logoAbout">
-                            <a href="home.html"><img src="images/logo-new.png" alt="VICIN" class="img-responsive"></a>
+                        <div class="logo">
+                            <a href="index.html "><img src="images/logo-new.png" alt="VICIN" class="img-responsive"></a>
                         </div>
                     </div>
                     <div class="col-md-8">
-                    <nav id="nav">
-                        <ul class="list-unstyled nav justify-content-center about-nav">
-                            <li class="active">
-                                <a href="roles.html" class="regular">Roles</a>
-                                <!-- <ul class="list-unstyled drop-down">
-                                    <li><a class="regular" href="developer.html">Developers</a></li>
-                                    <li><a class="regular" href="marketingAgency.html">Marketing Agency</a></li>
-                                    <li><a class="regular" href="brokerage.html">Brokerage House</a></li>
-                                    <li><a class="regular" href="realator.html">Realtor</a></li>
-                                </ul> -->
-                            </li>
-                            <li><a class="regular" href="benifits.html" style="color: #000;">Benifits</a></li>
-                            <li>
-                                <a class="regular" href="howitworks.html" style="color: #000;">How Its Works</a>
-                            </li>
-                            <li>
-                                <a class="regular" href="about.html" style="color: #000;">About Us</a>
-                                
-                            </li>
-                            <li>
-                                <a class="regular" href="support.html" style="color: #000;">Support</a>
-                                
-                            </li>
-                            <li>
-                                <a class="regular" href="pricing.html" style="color: #000;">Pricing</a>
-                                
-                            </li>
-                            <li>
-                                <a class="regular" href="contact.html" style="color: #000;">Contact Us</a>
-                            </li>
-                            <li>
-                                <a class="regular" href="contact.html" style=" background-color: #EC7922;font-family: Roboto; font-size: 18px; font-weight: 900; color: #FFF; padding: 8px 10px;">FREE TRIAL</a>
-                            </li>
-                            <li>
-                                <a class="regular" href="contact.html" style="    width: 80px !important; text-align: center;  color: #EC7922; border: 1px solid #EC7922;   font-family: Roboto; font-size: 18px; font-weight: 900; padding: 8px 10px;">DEMO</a>
-                            </li>
-                            
-                        </ul>
-                    </nav>   
-                     
+                        <nav id="nav">
+                            <ul class="list-unstyled nav justify-content-center">
+                                <li class="nav-item">
+                                    <a href="#" class="regular dropdown-toggle" id="rolesDropdown" data-toggle="dropdown">Roles</a>
+                                    <div class="dropdown-box">
+                                        <ul class="list-unstyled">
+                                            <li class="dd"><a class="regular " href="developer.html">Developers</a></li>
+                                            <li class="dd"><a class="regular " href="marketingAgency.html">Marketing Agency</a></li>
+                                            <li class="dd"><a class="regular "  href="brokerage.html">Brokerage House</a></li>
+                                            <li class="dd"><a class="regular " href="realator.html">Realtor</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="regular" href="benifit.html" style="color: #000;">Benefits</a></li>
+                                <li><a class="regular" href="howItsWork.html" style="color: #000;">How It Works</a></li>
+                                <li><a class="regular" href="about.html" style="color: #000;">About Us</a></li>
+                                <li><a class="regular" href="helpCenter.html" style="color: #000;">Support</a></li>
+                                <li><a class="regular" href="pricing.html" style="color: #000;">Pricing</a></li>
+                                <li><a class="regular" href="contact.html" style="color: #000;">Contact Us</a></li>
+                                <li><a class="regular" href="contact.html" style="background-color: #EC7922; font-family: Roboto; font-size: 18px; font-weight: 900; color: #FFF; padding: 8px 10px;">FREE TRIAL</a></li>
+                                <li><a class="regular" href="contact.html" style="width: 80px !important; text-align: center; color: #EC7922; border: 1px solid #EC7922; font-family: Roboto; font-size: 18px; font-weight: 900; padding: 8px 10px;">DEMO</a></li>
+                            </ul>
+                        </nav>
                     </div>
+                    
+                    
                 </div>
             </div>
-</section>
+         </section>
        
 <section style="height: 500px;">
-            <div class=" coverBenifit">
+            <div class=" coverAbout">
                 <div class="container custom-container" style="display: flex; flex-wrap: wrap;">
                     <div class="col-sm-6">
                         <div class="caption">
                            <div class="aboutHeadBox">
-                            <h1 class="aboutHeading">Benfits</h1>
+                            <h1 class="aboutHeading">Contact Us</h1>
                            </div>
                         </div>
                     </div>
     
-                    <div class="col-md-6 benifit" style=" flex: 1; display: flex; align-items: center; justify-content: center;">
-                        <!-- <img src="images/banifitImg.png" alt=""> -->
+                    <div class="col-md-6 aboutImage" style=" flex: 1; display: flex; align-items: center; justify-content: end;">
+                        <img src="images/contact.png" class="imageStyle" alt="">
                     </div>
                 </div>
             </div>
@@ -96,86 +159,129 @@
 <p style="    margin: 12px 0;">Home - Roles - About Us</p>
 </section>
 
-<section style="height: 265px; display: flex; justify-content: center; align-items: center;">
-    <div class="container">
-        <div class="row justify-content-center align-items-center text-center">
-            <div class="col-sm-9">
-                <h3 style="color: #EC7922; font-size: 36px; font-family: Roboto; font-weight: 500;">Maximize Efficiency with XPreCon Automation</h3>
-                <p style="color: #000; font-size: 18px; font-family: Roboto; font-weight: 400;">XPreCon automates project management tasks such as inventory allocations and purchaser form approvals, reducing manual efforts and increasing efficiency. Focus on strategic decisions without being bogged down by routine processes.</p>
+<section style="height: 700px; background-color: #EC7922; display: flex; justify-content: center; align-items: center;">
+    <div class="container custom-container ">
+        <div class="row ">
+            <div class="col-sm-6 contact-box">
+                <div class="contactContent">
+                    <h5>Connect with US</h5>
+                    <h1>Send Us Your Inquiry</h1>
+                    <p>If you can't find the information you need or have a specific inquiry, please contact the XPrecon team using the enquiry form. Your satisfaction and access to precise information are our top priorities.</p>
+                    <p>To ensure a prompt and tailored response, please use our convenient enquiry form. By providing details about your specific needs or questions, you enable our experienced XPrecon team to address your concerns comprehensively. We are committed to delivering accurate and personalized assistance, ensuring your experience with XPrecon is both informative and satisfying. Don't hesitate to reach out – we're here to help.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="contact-form ">
+                    <div class="row">
+
+                    </div>
+                    <div class="cont-Head ">
+                        <h1>Submit Your Enquiry</h1>
+                       
+                    </div>
+
+
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center d-flex" style="    padding: 5px;">
+                            <div class="col-sm-6 col-md-6 field">
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-sm-6 col-md-6 field">
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row justify-content-center align-items-center d-flex" style="    padding: 5px;">
+                            <div class="col-sm-6 col-md-6 field">
+                                <input type="text" class="form-control" placeholder="Email Address*">
+                            </div>
+                            <div class="col-sm-6 col-md-6 field">
+                                <select class="form-control select-Dropdown">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+
+
+
+                        <div class="row justify-content-center align-items-center d-flex" style="    padding: 5px;">
+                            <div class="col-sm-6 col-md-6 field">
+                                <input type="text" class="form-control" placeholder="Mobile*">
+                            </div>
+                            <div class="col-sm-6 col-md-6 field">
+                                <select class="form-control select-Dropdown">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+
+
+                        <div class="row justify-content-center align-items-center d-flex" style="    padding: 5px;">
+                            <div class="col-sm-12    col-md-12 field">
+                                <input type="textarea" class="form-control" placeholder="Write your message" style="height: 181px;">
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-center align-items-center d-flex" style="    padding: 5px;">
+                            <div class="col-sm-12    col-md-12 ">
+                               <input type="text" name="" id="" value="Submit" style="background-color: #0C1335; color: #fff; width: 100%; text-align: center; padding: 20px;">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6" style="height: 500px; background-image: url(images/bg-img1.png); padding: 0; background-size: cover; background-repeat: no-repeat; background-position: center;">
-                <img src="images/beni-1.png" alt="" style="width: 100%; height: 500px;  margin-top: 5px; " >
-            </div>
-            <div class="col-sm-6" style="height: 500px; background-image: url(images/second-bg.png); padding: 0; background-size: cover; background-repeat: no-repeat; background-position: center; display: flex; align-items: center; justify-content: center;">
-                <div class="contentBox">
-                    <h4 style="text-align:left; color: #fff; font-size: 36px; font-family: Roboto; font-weight: 500;">Automation Overview</h4>
-                    <p style="width: 80%;text-align:left; color: #fff; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 1.2;">XPreCon streamlines and automates various project management tasks, reducing manual efforts and increasing efficiency like inventory allocations, purchaser forms, Co-Op% distribution, approval of purchaser forms, and assignment reselling. This automation allows you to focus on strategic decisions rather than getting bogged down by routine processes.</p>
+
+    <section style="height: 700px;">
+        <img src="images/map.png" alt="">
+    </section>
+    
+    <section style="height: 415px; display: flex; align-items: center;">
+        <div class="container custom-container" style="width: 100%; display: flex; ">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <div class="contactDetails">
+                        <h5 style="font-family: Roboto; font-weight: 700; font-size: 26px;">Head Office</h5>
+                        <p style="font-size: 20px; font-family: Roboto; font-weight: 400;">Suite 1208, 90 Burnhamthorpe, Road West, Mississauga, Ontario, L5B 3C3, Canada</p>
+                        <div class="row">
+                            <div class="col-sm-6"><p><i class="fa-regular fa-envelope" style="color: #EC7922; font-size: 12px;"></i> help@xprecon.com</p></div>
+                            <div class="col-sm-6"><p><i class="fa-solid fa-phone" style="color: #EC7922; font-size: 12px;"></i> +(1) 905-766-3710</p></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-        </div>
-
-
-
-
-        <div class="row">
-           
-            <div class="col-sm-6" style="height: 500px;  background-image: url(images/third-bg.png); padding: 0; background-size: cover; background-repeat: no-repeat; background-position: center; display: flex; align-items: center; justify-content: center;">
-                <div class="contentBox2">
-                    <h4 style="text-align:left; color: #fff; font-size: 36px; font-family: Roboto; font-weight: 500;">Real-Time Collaboration</h4>
-                    <p style="width: 80%;text-align:left; color: #fff; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 1.2;">
-                        With XPreCon, collaborate seamlessly with all stakeholders in real-time. This ensures that everyone is on the same page, improving communication, coordination, and overall project success.
-                    </p>
+            <div class="row" style="flex-grow: 1; justify-content: flex-end;">
+                <div class="col-md-4 col-sm-4 d-flex justify-content-end">
+                    <div class="contactDetails2">
+                        <h5 style="font-family: Roboto; font-weight: 700; font-size: 26px;">Official Working Hours</h5>
+                        <p style="font-size: 20px; font-family: Roboto; font-weight: 400;"><i class="fa-regular fa-calendar" style="color: #EC7922; font-size: 14px;"></i> Monday to Friday</p>
+                        <p style="font-size: 20px; font-family: Roboto; font-weight: 400;"><i class="fa-regular fa-clock" style="color: #EC7922; font-size: 14px;"></i> 9:00 am - 6:00 pm</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6" style=" padding: 0; background-size: cover; background-repeat: no-repeat; background-position: center;">
-                <img src="images/bg-third.png" alt="" style="width: 100%; height: 500px;" >
-            </div>
-            
         </div>
-
-
-        <div class="row">
-            <div class="col-sm-6" style="height: 500px; background-image: url(images/bg-img1.png); padding: 0; background-size: cover; background-repeat: no-repeat; background-position: center;">
-                <img src="images/fourth.png" alt="" style="width: 100%; height: 500px;  margin-top: 5px; " >
-            </div>
-            <div class="col-sm-6" style="height: 500px; background-image: url(images/second-bg.png); padding: 0; background-size: cover; background-repeat: no-repeat; background-position: center; display: flex; align-items: center; justify-content: center;">
-                <div class="contentBox">
-                    <h4 style="text-align:left; color: #fff; font-size: 36px; font-family: Roboto; font-weight: 500;">Reporting and Analytics</h4>
-                    <p style="width: 80%;text-align:left; color: #fff; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 1.2;">
-                        Utilize powerful reporting and analytics tools to monitor project progress, and make data-driven decisions. This feature ensures that you can track performance metrics (KPIs) and optimize your workflow for better outcomes.
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-        <div class="row">           
-            <div class="col-sm-6" style="height: 500px;  background-image: url(images/third-bg.png); padding: 0; background-size: cover; background-repeat: no-repeat; background-position: center; display: flex; align-items: center; justify-content: center;">
-                <div class="contentBox2">
-                    <h4 style="text-align:left; color: #fff; font-size: 36px; font-family: Roboto; font-weight: 500;">Co-Op% Innovation</h4>
-                    <p style="width: 80%;text-align:left; color: #fff; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 1.2;">
-                        XPreCon has first time in Pre-Construction real estate managed to track crystal clear allocation, paying and receiving of Co-op% from developer to Marketing agency, Brokerage House and Realtor, Co-Op% tracker makes it easier to track all milestones and deadlines of Co-Op% commission tracking of payable and receivables .
-                    </p>
-                </div>
-            </div>
-            <div class="col-sm-6" style=" padding: 0; background-size: cover; background-repeat: no-repeat; background-position: center;">
-                <img src="images/fifth.png" alt="" style="width: 100%; height: 500px;" >
-            </div>
-            
-        </div>
-
-
-
-
-    </div>
-</section>
+    </section>
+    
+    
+    
 
 <section style="height: 223px">
     <div class="container-fluid"
@@ -403,6 +509,7 @@ function removeFileExtensionFromURL() {
 removeFileExtensionFromURL();
 
 </script>
+<script src="js/nabvar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

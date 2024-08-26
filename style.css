@@ -955,10 +955,36 @@ background-color: #0C1335;
 	} */
   .imgBoxHeading{
 		padding: 20px;
-    margin-top: 130px;
+    margin-top: 20px;
     text-align: center;
     color: #fff;
     font-family: Roboto;
     font-weight: 500;
     font-size: 36px;
 	}
+
+/* Initially hide the dropdown-box */
+.dropdown-box {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 15%;
+  height: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* When hovering over or clicking the dropdown-toggle, show the box */
+li.nav-item:hover .dropdown-box,
+.dropdown-box.show {
+  display: block;
+}
+
+.dd{
+  padding: 20px;
+}
+
+
+.dd a{
+  padding: 20px;
+}
