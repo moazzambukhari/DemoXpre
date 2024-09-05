@@ -13,7 +13,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style> 
  
-        
+ .contentBox2 {
+    padding-top: 286px;
+    text-align: left;
+}
+
+.roles-box, .roles-box1 {
+       
+        border-left: 7px solid #9BB7C4;
+       
+    }
+
+    /* CSS to apply when the box is clicked */
+    .active-box {
+        background-color: #f1f1f1;
+        border-left: 7px solid #EC7922;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
             </style>  
 </head>
   <body>
@@ -43,7 +59,7 @@
                                     </div>
                                 </li>
                                 <li><a class="regular" href="benifit.html" style="color: #000;">Benefits</a></li>
-                                <li><a class="regular" href="howItsWork.html" style="color: #000;">How It Works</a></li>
+                                <li><a class="regular" href="how_its_work.html" style="color: #000;">How It Works</a></li>
                                 <li><a class="regular" href="about.html" style="color: #000;">About Us</a></li>
                                 <li><a class="regular" href="helpCenter.html" style="color: #000;">Support</a></li>
                                 <li><a class="regular" href="pricing.html" style="color: #000;">Pricing</a></li>
@@ -173,50 +189,43 @@
 
         <section class="roles">
             <div class="container custom-container">
-                <div class="row" >
+                <div class="row">
                     <div class="col-xs-12 col-sm-8" style="padding-top:50px;">
                         <h5 class="heading6">ROLES</h5>
                         <h1 class="heading5">Transformative Architects of Tomorrow's Communities</h1>
-                        </div>
+                    </div>
                     <div class="col-xs-12 col-sm-4"></div>
                 </div>
-
+        
                 <div class="row" style="margin-top: 20px;">
                     <div class="col-xs-12 col-sm-6">
                         <div class="row">
-                           
-                            <div class="col-md-12 roles-box">
-                                <h4>Developers: </h4>
-                                  <p>Transform project management with seamless inventory automation. Elevate efficiency and drive success with real-time insights.</p>
-                             <a href="">LEARN MORE...</a>
+                            <div class="col-md-12 roles-box" onclick="changeImageAndHighlight('developer', this)">
+                                <h4>Developers:</h4>
+                                <p>Transform project management with seamless inventory automation. Elevate efficiency and drive success with real-time insights.</p>
+                                <a href="#">LEARN MORE...</a>
                             </div>
-
-                            <div class="col-xs-12 col-sm-12 roles-box1">
-                                <h4>Brokerage Houses: </h4>
-                                
+        
+                            <div class="col-xs-12 col-sm-12 roles-box1" onclick="changeImageAndHighlight('brokerage', this)">
+                                <h4>Brokerage Houses:</h4>
                             </div>
-
-                            <div class="col-xs-12 col-sm-12 roles-box1">
-                                <h4>Assignees: </h4>
-                                
+        
+                            <div class="col-xs-12 col-sm-12 roles-box1" onclick="changeImageAndHighlight('assignee', this)">
+                                <h4>Assignees:</h4>
                             </div>
-
-                            <div class="col-xs-12 col-sm-12 roles-box1">
-                                <h4>Marketing Agencies: </h4>
-                                
+        
+                            <div class="col-xs-12 col-sm-12 roles-box1" onclick="changeImageAndHighlight('marketing', this)">
+                                <h4>Marketing Agencies:</h4>
                             </div>
-
-                            <div class="col-xs-12 col-sm-12 roles-box1">
-                                <h4>Realtors: </h4>
-                                
+        
+                            <div class="col-xs-12 col-sm-12 roles-box1" onclick="changeImageAndHighlight('realtor', this)">
+                                <h4>Realtors:</h4>
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    <div class="col-xs-12 col-sm-6 dashboard-bg" style="margin-top: 50px;" >
-                        <img src="images/dahboard.png" class="dashboard-inner" alt="" >
-                        
+        
+                    <div class="col-xs-12 col-sm-6 dashboard-bg" style="margin-top: 50px;">
+                        <img src="images/dahboard.png" class="dashboard-inner" id="roleImage" alt="Default Image">
                     </div>
                 </div>
             </div>
@@ -268,15 +277,14 @@
         <section style="height: 700px; background-color: #EC7922;">
             <div class="container custom-container">
                <div class="row">
-                    <div class="col-md-4">
-                         
-                        <div class="contentBox2" style="    padding-top: 286px;">
-                            <h5 class="heading8">Take the Next Step</h5>
-                            <h1 class="heading7">Ready to get started? </h1>
-                            <p class="para3">Pick the plan that aligns with your goals and maximize your business potential. For further assistance or to discuss the Enterprise Plan, get in touch with us.</p>
-                        </div>
-
+                <div class="col-md-4">
+                    <div class="contentBox2" style="padding-top: 286px; text-align: left; padding-left: 0;">
+                        <h5 class="heading8">Take the Next Step</h5>
+                        <h1 class="heading7">Ready to get started? </h1>
+                        <p class="para3">Pick the plan that aligns with your goals and maximize your business potential. For further assistance or to discuss the Enterprise Plan, get in touch with us.</p>
                     </div>
+                </div>
+                
                     <div class="col-xs-12 col-sm-8 formBox" >
                         <div class="row">
                           <div class="col-md-4 priceBoxList" id="box1">
@@ -530,92 +538,95 @@
         </section>
 
     </main>
-
-<footer id="footer">
-			<!-- footer holder of the page -->
-			<div class="footer-holder" style="background-color: #4e4e4e;">
-				<div class="container custom-container">
-					<div class="row" style="     margin-top: 30px;
-    margin-bottom: 50px;">
-						<div class="col-md-12">
-							<img src="images/logo1.png" alt="" style="    height: 50px;">
-						</div>
-					</div>
-					<div class="row" >
-						<div class="col-xs-12 col-sm-6 col-md-2" style="    width: 12%;">
-							<h3 class="" style="color: #fff;">Home</h3></div>
-						<div class="col-xs-12 col-sm-6 col-md-2">
-							<h3 class="">Roles</h3>
-							<p>Developer</p>
-							<p>Marketing Agency</p>
-							<p>Brokerage House</p>
-							<p>Realtor</p>
-							<p>Assignee</p>	
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-2">
-							<h3 class="">Benefits</h3>
-							<p>Automation Overview</p>
-							<p>Real-Time Collaboration</p>
-							<p>Tracking and Analytics</p>
-							<p>Co-Op% Innovation</p>	
-						</div>
-						
-						<div class="col-xs-12 col-sm-6 col-md-2">
-							<h3 class="">How it Works</h3>
-							<!-- contact list of the page -->
-									<p>AStep-by-Step Guide</p>	
-									<p>Workflow Visualizaion</p>	
-									<h3 class="">About Us</h3>
-									<p>Company Overview</p>	
-									<p>Mission and Vision</p>	
-									<p>Developer</p>	
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-2">
-							<h3 class="">Contact Us</h3>
-							<!-- hour list of the page -->
-							<ul class="list-unstyled hour-list">
-								<li>Support Information</li>
-								<li>Inquiry Form</li>
-								
-							</ul>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-2" style="width: 270px;">
-							<h3 class="">Get Weekly Updates</h3>
-							
-							<!-- subscribe form of the page -->
-							<form action="#" class="subscribe-form">
-								<fieldset>
-									<input type="email" class="form-control" placeholder="your email here" style="width: 270px; height: 45px; background-color: #fff;">
-									
-								</fieldset>
-								
-							</form>
-							<Button class="" style="background-color: #9BB7C4; color: #fff; width: 93px; height: 45px; border: none; margin-top: 20px;">SUBMIT</Button>
-							
-							<p style="margin-top: 30px;">Follow us @</p>
-							<ul class="social-icons">
-								<li><i class="fa-brands fa-linkedin-in iconsFooter"></i></li>
-								<li><i class="fa-brands fa-twitter iconsFooter"></i></li>
-								<li><i class="fa-brands fa-facebook-f iconsFooter"></i></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- footer area of the page -->
-			<div class="footer-area">
-				<div class="container custom-container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-4">
-							<p>Copyrights © 2017 All Rights Reserved.</p>
-						</div>
-						<div class="col-xs-12 col-sm-6">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+    <footer id="footer">
+        <!-- footer holder of the page -->
+        <div class="footer-holder" style="background-color: #4e4e4e;">
+            <div class="container custom-container">
+                <div class="row" style="     margin-top: 30px;
+margin-bottom: 50px;">
+                    <div class="col-md-12">
+                        <img src="images/logo1.png" alt="" style="    height: 50px;">
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-xs-12 col-sm-6 col-md-2" style="    width: 12%;">
+                        <h3 class="" style="color: #fff;"><a href="" class="footer-dropdown">Home</a></h3></div>
+                    <div class="col-xs-12 col-sm-6 col-md-2">
+                        <h3 class=""><a href="" class="footer-dropdown">Roles</a></h3>
+                        <p><a href="developer.html" class="footer-dropdown"></a> Developer</a></p>
+                        <p><a href="marketingAgency.html" class="footer-dropdown">Marketing Agency</a></p>
+                        <p><a href="brokerageHouses.html" class="footer-dropdown">Brokerage House</a></p>
+                        <p><a href="Realator.html" class="footer-dropdown">Realtor</a></p>
+                        <p><a href="blog.html" class="footer-dropdown">Blogs</a></p>	
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2">
+                        <h3class=""> <a href="benifit.html" class="footer-dropdown">Benefits</a></h3>
+                        <p><a href="" class="footer-dropdown">Automation Overview</a></p>
+                        <p><a href="" class="footer-dropdown">Real-Time Collaborationc</p>
+                        <p><a href="" class="footer-dropdown">Tracking and Analytics</a></p>
+                        <p><a href="" class="footer-dropdown">Co-Op% Innovation</a></p>	
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-2">
+                        <h3 class="">How it Works</h3>
+                        <!-- contact list of the page -->
+                                <p><a href="" class="footer-dropdown">AStep-by-Step Guide</a></p>	
+                                <p><a href="" class="footer-dropdown">Workflow Visualizaion</a></p>	
+                                <h3 class=""><a href="about.html" class="footer-dropdown">About Us</h3>
+                                <p><a href="" class="footer-dropdown">Company Overview</a></p>	
+                                <p><a href="about.html" class="footer-dropdown">Mission and Vision</a></p>	
+                                <p><a href="developer.html" class="footer-dropdown">Developer</a></p>	
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2">
+                        <h3 class=""><a href="contact.html" class="footer-dropdown">Contact Us</a></h3>
+                        <!-- hour list of the page -->
+                        <ul class="list-unstyled hour-list">
+                            <li></li>
+                            <li></li>
+                            <p><a href="developer.html" class="footer-dropdown">Support Information</a></p>	
+                            <p><a href="developer.html" class="footer-dropdown">Inquiry Form</a></p>	
+                            <p><a href="helpCenter.html" class="footer-dropdown">help center</a></p>	
+                            <p><a href="faq.html" class="footer-dropdown">FAQs</a></p>	
+                            
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-2" style="width: 270px;">
+                        <h3 class="">Get Weekly Updates</h3>
+                        
+                        <!-- subscribe form of the page -->
+                        <form action="#" class="subscribe-form">
+                            <fieldset>
+                                <input type="email" class="form-control" placeholder="your email here" style="width: 270px; height: 45px; background-color: #fff;">
+                                
+                            </fieldset>
+                            
+                        </form>
+                        <Button class="" style="background-color: #9BB7C4; color: #fff; width: 93px; height: 45px; border: none; margin-top: 20px;">SUBMIT</Button>
+                        
+                        <p style="margin-top: 30px;">Follow us @</p>
+                        <ul class="social-icons">
+                            <li><i class="fa-brands fa-linkedin-in iconsFooter"></i></li>
+                            <li><i class="fa-brands fa-twitter iconsFooter"></i></li>
+                            <li><i class="fa-brands fa-facebook-f iconsFooter"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer area of the page -->
+        <div class="footer-area">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <p>Copyrights © 2017 All Rights Reserved.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -645,23 +656,49 @@
         </script>
 
 <script>
-    // JavaScript to remove file extension from URL
-function removeFileExtensionFromURL() {
-    // Get the current URL
-    let url = window.location.href;
+    // JavaScript function to change the image based on the role clicked
+    function changeImage(role) {
+        var imageElement = document.getElementById('roleImage');
+        
+        // Define images for each role
+        var images = {
+            'developer': 'images/dahboard.png',
+            'brokerage': 'images/dahboard.png',
+            'assignee': 'images/dahboard.png',
+            'marketing': 'images/dahboard.png',
+            'realtor': 'images/dahboard.png'
+        };
 
-    // Remove file extension (e.g., .html, .php)
-    let newUrl = url.replace(/\.(html|php|asp|aspx|cgi|pl)$/, '');
-
-    // Update the URL in the address bar without reloading the page
-    if (url !== newUrl) {
-        history.replaceState(null, null, newUrl);
+        // Change the image based on the role clicked
+        imageElement.src = images[role];
     }
-}
+</script>
 
-// Call the function
-removeFileExtensionFromURL();
 
+
+
+<script>
+    function changeImageAndHighlight(role, element) {
+        // Change image
+        var imageElement = document.getElementById('roleImage');
+        var images = {
+            'developer': 'images/dahboard.png',
+            'brokerage': 'images/dahboard.png',
+            'assignee': 'images/dahboard.png',
+            'marketing': 'images/dahboard.png',
+            'realtor': 'images/dahboard.png'
+        };
+        imageElement.src = images[role];
+
+        // Remove highlight from all boxes
+        var allBoxes = document.querySelectorAll('.roles-box, .roles-box1');
+        allBoxes.forEach(function(box) {
+            box.classList.remove('active-box');
+        });
+
+        // Add highlight to the clicked box
+        element.classList.add('active-box');
+    }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

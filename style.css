@@ -919,7 +919,7 @@ background-color: #0C1335;
   }
 
   .contentBox2{
-    margin-left: 142px;
+    /* margin-left: 142px; */
     width: 100%;
   }
 
@@ -987,4 +987,7 @@ li.nav-item:hover .dropdown-box,
 
 .dd a{
   padding: 20px;
+}
+.footer-dropdown{
+  color:#A7A7A7;
 }
