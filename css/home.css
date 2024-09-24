@@ -1,0 +1,46 @@
+.contentBox2 {
+    padding-top: 286px;
+    text-align: left;
+}
+
+.roles-box, .roles-box1 {
+       
+        border-left: 7px solid #9BB7C4;
+       
+    }
+
+    /* CSS to apply when the box is clicked */
+    .active-box {
+        background-color: #f1f1f1;
+        border-left: 7px solid #EC7922;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .header-section {
+        height: 114px;
+    }
+
+    .free-trial-button {
+        background-color: #EC7922;
+        font-family: 'Roobert', sans-serif; /* Use Roobert font */
+        font-size: 18px;
+        font-weight: 900;
+        color: #FFF !important;
+        padding: 8px 10px;
+    }
+
+    .demo-button {
+        width: 80px !important; 
+        text-align: center; 
+        color: #EC7922; 
+        border: 1px solid #EC7922; 
+        font-family: Roobert; 
+        font-size: 18px; 
+        font-weight: 900; 
+        padding: 8px 10px;
+    }
+
+
+
+    /* -------cover----- */
+
+    
