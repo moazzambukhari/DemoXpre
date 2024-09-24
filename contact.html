@@ -11,7 +11,14 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roobert:wght@900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
     <style> 
+#map {
+        height: 100%;
+        width: 100%;
+      }
 .contactContent {
     display: flex;
     flex-direction: column;
@@ -251,7 +258,7 @@ border-radius: none;
 
 
     <section style="height: 700px;">
-        <img src="images/map.png" alt="">
+        <div id="map"></div>
     </section>
     
     <section style="height: 415px; display: flex; align-items: center;">
@@ -305,17 +312,17 @@ boost collaboration, and drive success with our innovative platform</p>
         <div class="col-md-6">
                          
             <div class="contentBox2" style="    padding-top: 286px;">
-                <h5 class="heading9">Take the Next Step</h5>
-                <h1 class="heading5">Ready to get started? </h1>
-                <p class="para4">Pick the plan that aligns with your goals and maximize your business potential. For further assistance or to discuss the Enterprise Plan, get in touch with us.</p>
+                <h5 class="heading9">PROGRESSIVE AUTOMATION</h5>
+                <h1 class="heading5">Request a demo</h1>
+                <p class="para4">Ready to see our platform in action? Request a demo now and discover how our innovative solutions can transform your business. Get hands-on experience and personalized insights tailored to your needs. Schedule your demo today!</p>
             </div>
 
         </div>
         <div class="col-xs-12 col-sm-6 formBox" >
 
-            <div class="formRequest" >
+            <div class="formRequest"  style="width: 667px; ">
                     <!-- Contact Form of the page -->
-            <form action="#" class="contact-form" style="    height: 543px;">
+            <form action="#" class="contact-form" style=" background-color: none !important;   height: 543px;">
                 <div class="row" style="padding: 30px;">
                     
                     <div class="col-sm-6" >
@@ -513,8 +520,28 @@ function removeFileExtensionFromURL() {
 removeFileExtensionFromURL();
 
 </script>
+
+
 <script src="js/nabvar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  // Initialize the map and set its view
+  var map = L.map('map').setView([51.505, -0.09], 13);  // Set to London's coordinates by default
+
+  // Add a tile layer (using OpenStreetMap here)
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Add a marker to the map
+  L.marker([51.505, -0.09]).addTo(map)
+    .bindPopup('A pretty marker.<br> Easily customizable.')
+    .openPopup();
+</script>
+
   </body>
 </html>
 
