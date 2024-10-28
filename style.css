@@ -265,7 +265,7 @@ a {
 }
 
 .para2 {
-  color: #fff;
+  color: #727272;
   font-weight: 400;
   font-size: 18px;
   text-align: justify;
@@ -297,7 +297,7 @@ a {
   font-weight: 500;
   font-size: 36px;
   font-family: Roobert;
-  color: #fff;
+  color: #0A5274;
 }
 
 .caption {
@@ -426,7 +426,7 @@ body {
 .howitsWorks {
   height: 804px;
   background-color: #0C1335;
-  background-image: url('images/bg.png');
+  /* background-image: url('images/bg.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 130px;
