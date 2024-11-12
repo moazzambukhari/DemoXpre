@@ -1,585 +1,105 @@
- /* Example CSS */
-@font-face {
-  font-family: 'Roobert';
-  src: url('fonts/Roobert-Regular.woff2') format('woff2'),
-       url('fonts/Roobert-Regular.woff') format('woff'),
-       url('fonts/Roobert-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Roobert';
-  src: url('fonts/Roobert-Bold.woff2') format('woff2'),
-       url('fonts/Roobert-Bold.woff') format('woff'),
-       url('fonts/Roobert-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Roobert';
-  src: url('fonts/Roobert-Medium.woff2') format('woff2'),
-       url('fonts/Roobert-Medium.woff') format('woff'),
-       url('fonts/Roobert-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
 
-body {
-  font-family: 'Roobert', sans-serif;
-}
+     /* Example CSS */
+     @font-face {
+      font-family: 'Roobert';
+      src: url('fonts/Roobert-Regular.woff2') format('woff2'),
+           url('fonts/Roobert-Regular.woff') format('woff'),
+           url('fonts/Roobert-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Roobert';
+      src: url('fonts/Roobert-Bold.woff2') format('woff2'),
+           url('fonts/Roobert-Bold.woff') format('woff'),
+           url('fonts/Roobert-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Roobert';
+      src: url('fonts/Roobert-Medium.woff2') format('woff2'),
+           url('fonts/Roobert-Medium.woff') format('woff'),
+           url('fonts/Roobert-Medium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+    body {
+      font-family: 'Roobert', sans-serif;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Roobert', sans-serif;
+      font-weight: 700; /* Use bold weight */
+    }
+    
+
+    .logo {
+      height: 62px;
+      width: 178px;
+      margin: 26px 0;
+    }
+    
+    a {
+      text-decoration: none;
+      font-family: Roobert, sans-serif;
+    }
+
+
+    body {
+      font-family: Roobert;
+    }
+
+
+    .dd {
+      margin-bottom: 15px;
+    }
+    
+    .dd a {
+      display: flex;
+      align-items: flex-start;
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    
+    .dd a:hover {
+      color: orange; /* Change the text color on hover */
+    }
+    
+    .dd a i {
+      margin-right: 10px; /* Adjust spacing for the icon */
+    }
+    
+    .dd span {
+      display: block;
+      font-weight: normal;
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+    }
+    
+    
+    /* Style for active page */
+    .dd.active a {
+      color: orange; /* Text color for active item */
+      font-weight: 700;
+    }
+    
+    .dd.active a i {
+      color: orange; /* Arrow icon color for active item */
+    }
+    .footer-dropdown{
+      color:#A7A7A7;
+    }
 
-h1, h2, h3 {
-  font-family: 'Roobert', sans-serif;
-  font-weight: 700; /* Use bold weight */
-}
 
-  .priceBoxList {
-  margin-top: 71px;
-  width: 304px;
-  height: 569px;
-  padding: 20px;
-  background-color: #fff;
-  position: relative;
-  transition: all 0.3s ease; /* Smooth transition for the hover effect */
-}
 
-.priceBoxList.hover,
-.priceBoxList:hover {
-  background-color: #0C1335;
-  color: #fff; /* Change text color to white when hovering */
-  transform: scaleY(1.035);
-}
-
-/* Change the color of the text inside the .priceBoxList on hover */
-.priceBoxList.hover .features,
-.priceBoxList:hover .features,
-.priceBoxList.hover .standard-plan h4,
-.priceBoxList:hover .standard-plan h4,
-.priceBoxList.hover .priceTag h4,
-.priceBoxList:hover .priceTag h4,
-.priceBoxList.hover .priceTag p,
-.priceBoxList:hover .priceTag p,
-.priceBoxList.hover .standard h4,
-.priceBoxList:hover .standard h4,
-.priceBoxList.hover .standard p,
-.priceBoxList:hover .standard p {
-  color: #fff;
-}
-
-/* Ensure the text color inside the box changes as well */
-.priceBoxList.hover .priceContent1,
-.priceBoxList:hover .priceContent1 {
-  color: #fff;
-}
-
-/* Adjust the button's border and background color on hover */
-.priceBoxList.hover .registerBtn,
-.priceBoxList:hover .registerBtn {
-  border: 1px solid #EC7922;
-  background: #EC7922;
-  color: #fff;
-}
-
-.features {
-  color: #707070;
-  font-size: 16px;
-  font-family: Roobert;
-  font-weight: 400;
-}
-
-.standard-plan h4 {
-  color: #707070;
-  font-size: 16px;
-  font-family: Roobert;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-.priceTag h4 {
-  color: #000;
-  font-size: 36px;
-  font-family: Roobert;
-  font-weight: 700;
-}
-
-.priceTag p {
-  color: #EC7922;
-  font-size: 14px;
-  font-family: Roobert;
-  font-weight: 700;
-}
-
-.standard h4 {
-  color: #EC7922;
-  font-size: 20px;
-  font-family: Roobert;
-  font-weight: 500;
-}
-
-.standard p {
-  color: #707070;
-  font-size: 13px;
-  font-family: Roobert;
-  font-weight: 400;
-}
-
-.registerBtn {
-  font-size: 14px;
-  font-weight: 500;
-  color: #000;
-  position: absolute;
-  left: 30px;
-  bottom: 50px;
-  height: 44px;
-  width: 244px;
-  border: 1px solid #0A5274;
-  background: #fff;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.logo {
-  height: 62px;
-  width: 178px;
-  margin: 26px 0;
-}
-
-a {
-  text-decoration: none;
-  font-family: Roobert, sans-serif;
-}
-
-.coverBtn1 {
-  background-color: #EC7922;
-  color: #fff;
-  border: 1px solid #EC7922;
-  height: 42px;
-  width: 160px !important;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-right: 10px;
-}
-
-.coverBtn1 a {
-  font-family: Roobert, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.coverBtn1:hover {
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  height: 42px;
-  width: 160px !important;
-  margin-left: 10px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.coverBtn1 a:hover {
-  font-family: Roobert, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.heading1 {
-  font-weight: 700;
-  font-size: 14px;
-  text-align: left;
-  font-family: Roobert;
-}
-
-.heading2 {
-  font-weight: 900;
-  font-size: 36px;
-  text-align: left;
-  font-family: Roobert;
-}
-
-.heading4 {
-  font-size: 16px;
-  text-align: left;
-  font-family: Roobert;
-  font-weight: 700;
-}
-
-.heading8 {
-  font-weight: 700;
-  font-size: 16px;
-  text-align: left;
-  font-family: Roobert;
-  color: #fff;
-}
-
-.heading9 {
-  font-weight: 700;
-  font-size: 16px;
-  text-align: left;
-  font-family: Roobert;
-  color: #707070;
-}
-
-.heading10 {
-  font-size: 16px;
-  text-align: left;
-  font-family: Roobert;
-  font-weight: 700;
-  color: #EC7922;
-}
-
-.heading5 {
-  font-weight: 500;
-  font-size: 36px;
-  text-align: left;
-  font-family: Roobert;
-  color: #EC7922;
-}
-
-.heading6 {
-  font-weight: 700;
-  font-size: 16px;
-  text-align: left;
-  font-family: Roobert;
-}
-
-.heading7 {
-  font-weight: 500;
-  font-size: 36px;
-  text-align: left;
-  font-family: Roobert;
-  color: #fff;
-}
-
-.para1 {
-  font-weight: 400;
-  font-size: 16px;
-  text-align: left;
-  font-family: Roobert;
-  width: 904px;
-}
-
-.para2 {
-  color: #727272;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: justify;
-  font-family: Roobert;
-  width: 1042px;
-}
-
-.para3 {
-  color: #fff;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: justify;
-  font-family: Roobert;
-  width: 433px;
-  line-height: 1.4;
-}
-
-.para4 {
-  color: #000;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: justify;
-  font-family: Roobert;
-  width: 643px;
-  line-height: 1.4;
-}
-
-.hiw {
-  font-weight: 500;
-  font-size: 36px;
-  font-family: Roobert;
-  color: #0A5274;
-}
-
-.caption {
-  text-align: left;
-  margin-top: 120px;
-  font-family: Roobert;
-}
-
-body {
-  font-family: Roobert;
-}
-
-.cover {
-  background-image: url(images/coverHome.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 583px;
-  min-height: 100%;
-}
-
-.textColorWhite {
-  color: #fff;
-}
-
-.textColorBlack {
-  color: #000;
-}
-
-#nav ul {
-  margin: 48px 0px 0 0px;
-  width: 959px;
-  height: 44px;
-}
-
-#nav li {
-  padding: 0 13px;
-}
-
-#nav a {
-  color: #4E4E4E;
-  font-weight: 500;
-  font-size: 18px;
-  font-family: Roobert;
-}
-
-.custom-container {
-  max-width: 1500px;
-}
-
-.learnBtn {
-  background-color: #0C1335;
-  color: #fff;
-  width: 160px;
-  height: 42px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: absolute;
-  top: 101px;
-  right: 72px;
-}
-
-.learnBtn a {
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  font-family: Roobert;
-}
-
-.benifitBox1 {
-  height: 292px;
-  width: 492px;
-  position: relative;
-}
-
-.benifitBox1 img {
-  height: 292px;
-  width: 433px;
-}
-
-.btnBox {
-  height: 61px;
-  width: 312px;
-  background-color: #EC7922;
-  position: absolute;
-  bottom: -30px;
-  left: 72px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-
-.btnBox1 {
-  height: 61px;
-  width: 312px;
-  background-color: #EC7922;
-  position: absolute;
-  bottom: -30px;
-  left: 72px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.btnBox2 {
-  height: 61px;
-  width: 312px;
-  background-color: #EC7922;
-  position: absolute;
-  bottom: -30px;
-  left: 72px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.btnBoxa {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  font-family: Roobert;
-}
-
-.howitsWorks {
-  height: 804px;
-  /* background-color: #0C1335; */
-  /* background-image: url('images/bg.png'); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 130px;
-}
-
-.roles {
-  height: 743px;
-  background-color: #fff;
-  background-image: url('images/roles-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.roles-box {
-  margin-top: 10px;
-  background-image: url('images/smallRectangle.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 131px;
-  width: 643px;
-  border-left: 7px solid #9BB7C4;
-}
-
-.roles-box h4 {
-  padding-top: 12px;
-  color: #0C1335;
-  font-weight: 500;
-  font-size: 22px;
-  font-family: Roobert;
-  width: 100%;
-  margin: 0;
-}
-
-.roles-box p {
-  color: #0C1335;
-  font-weight: 400;
-  font-size: 18px;
-  font-family: Roobert;
-  width: 100%;
-  margin: 0;
-}
-
-.roles-box a {
-  padding-top: 12px;
-  color: #EC7922;
-  font-weight: 500;
-  font-size: 16px;
-  font-family: Roobert;
-}
-
-.roles-box1 {
-  margin-top: 10px;
-  background-image: url('images/roles-small-box.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70px;
-  width: 643px;
-  border-left: 7px solid #CDDBE1;
-}
-
-.roles-box1 h4 {
-  color: #0C1335;
-  font-weight: 500;
-  font-size: 22px;
-  font-family: Roobert;
-  padding-top: 23px;
-}
-
-.box {
-  width: 100%;
-}
-
-.dashboard-bg {
-  height: 444px;
-  width: 748px;
-  margin-top: 20px;
-  background-image: url('images/dashboardstructure.png');
-  margin: 0;
-  padding: 0;
-}
-
-.dashboard-inner {
-  height: 411px;
-  width: 749px;
-  margin-top: 33px;
-}
-
-.blog-para {
-  color: #0C1335;
-  font-weight: 400;
-  font-size: 18px;
-  font-family: Roobert;
-  width: 552px;
-  margin: 0;
-}
-
-.blog-btn {
-  height: 42px;
-  width: 160px;
-  background-color: #0C1335;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 20px;
-}
-
-.blog-btn a {
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  font-family: Roobert;
-}
-
-.blog-box {
-  border: 1px solid #000;
-  height: 292px;
-  width: 367px;
-}
-
-.caption-content {
-  margin-top: 140px;
-}
-
-.txt-holder p {
-  margin-top: 10px;
-  font-size: 16px;
-  font-family: Roobert;
-  font-weight: 500;
-}
-
-.txt-holder h3 {
-  color: #739FB0;
-  font-size: 22px;
-  font-family: Roobert;
-  font-weight: 500;
-  width: 247px;
-}
-
-.btnLearn {
-  background-color: #0C1335;
-  width: 115px;
-  height: 35px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  border: 1px solid #0C1335;
-}
-
-.btnLearn a {
-  color: #fff;
-  padding: 0;
-  margin: 0;
-}
 
 /*------------------------------------------------------------------
 44. Footer / #footer
@@ -807,11 +327,11 @@ body {
         color: #739FB0; /* Change the disk color */
       }
 
-      .formBox{
+      /* .formBox{
         justify-content: end;
         align-items: end;
         display: flex;
-      }
+      } */
 
 
 
@@ -993,47 +513,7 @@ ul.list-unstyled {
   padding: 0;
 }
 
-.dd {
-  margin-bottom: 15px;
-}
 
-.dd a {
-  display: flex;
-  align-items: flex-start;
-  color: #000;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.dd a:hover {
-  color: orange; /* Change the text color on hover */
-}
-
-.dd a i {
-  margin-right: 10px; /* Adjust spacing for the icon */
-}
-
-.dd span {
-  display: block;
-  font-weight: normal;
-  font-size: 12px;
-  color: #888;
-  margin-top: 5px;
-}
-
-
-/* Style for active page */
-.dd.active a {
-  color: orange; /* Text color for active item */
-  font-weight: 700;
-}
-
-.dd.active a i {
-  color: orange; /* Arrow icon color for active item */
-}
-.footer-dropdown{
-  color:#A7A7A7;
-}
 
 
 input::placeholder {
